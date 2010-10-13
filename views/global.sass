@@ -1,0 +1,59 @@
+
+//Palette
+$blue: #0049B5
+$purple: #6300AF
+$yellow: #C99A00
+$red: #B40F00
+$green: #3AB500
+
+$white: #FFFFFF
+$gray: #999999
+$black: #222222
+
+//Mixins
+
+@mixin round-corners($r)
+	-moz-border-radius: $r
+	-webkit-border-radius: $r
+	-khtml-border-radius: $r
+	border-radius: $r
+
+//Global
+
+body
+	font-family: Helvetica, Arial, sans-serif
+
+//Content	
+#nav
+	background: $blue
+	color: $white
+	position: absolute
+	z-index: 400
+	
+#tools
+	background: $purple
+	position: absolute
+	z-index: 300
+
+#map
+	background: $green
+	position: absolute
+	z-index: 200
+	#slider
+		width: 80%
+		margin: 50% auto
+	
+#game_board
+	background: $yellow
+	position: absolute
+	z-index: 10
+	
+#deck
+	background: $red
+	position: absolute
+	z-index: 100
+	
+.tape
+	background: $gray
+	position: absolute
+	z-index: 40
